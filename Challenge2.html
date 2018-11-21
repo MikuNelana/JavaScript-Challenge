@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript - The area of a triangle</title>
+    <style>
+      body{
+        text-align: center;
+        background-color: teal;
+        margin-top: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The area of a triangle</h1>
+    <p>Check Console for returns</p>
+    <script>
+      var side1, side2, side3;
+      var semiPerimeter;
+      var surfaceArea;
+      var text;
+      side1 = 7;
+      side2 = 8;
+      side3 = 9;
+
+      semiPerimeter = (side1 + side2 + side3)/2;
+      surfaceArea =  Math.sqrt(semiPerimeter * ((semiPerimeter-side1) * (semiPerimeter-side2) * (semiPerimeter-side3)));
+      surfaceArea = Math.round(surfaceArea);
+      window.console.log(surfaceArea);
+      </script>
+
+  </body>
+</html>
